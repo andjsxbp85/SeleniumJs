@@ -1,0 +1,21 @@
+{
+  "name": "cucumberselenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test2": "node features/cucumber.js",
+    "test3": "cucumber-js --publish CUCUMBER_PUBLISH_ENABLED=true",
+    "test4": "cucumber-js",
+    "test5": "cucumber-js --tags @login",
+    "test6": "./node_modules/.bin/cucumber-js features/login-feature --tags @login"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^7.0.0-rc.0",
+    "selenium-webdriver": "^4.0.0-rc-1"
+  }
+}
