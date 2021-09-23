@@ -7,7 +7,7 @@ setDefaultTimeout(60 * 1000);
 //driver setup
 const capabilities = Capabilities.chrome();
 capabilities.set('chromeOptions', { "w3c": false });
-const driver = new Builder().withCapabilities(capabilities).build();
+driver = new Builder().withCapabilities(capabilities).build();
 
 
 Before({timeout: 60 * 1000}, function() {
@@ -43,13 +43,10 @@ Then('I can see my dashboard page', async function () {
     //#1 dan #2 sama, kadang dapet kadang nggak textnya
     helloWord = await getTextElement(By.css('div.container h4')); //pasti dapet
     console.log("ISI DARI helloWord ="+helloWord);
-
-
-
 });
 
 AfterAll(async function(){
-    await driver.quit();
+    //await driver.quit();
 });
 
 function sleepFor(durationMs){

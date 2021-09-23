@@ -9,7 +9,7 @@
     "test3": "cucumber-js --publish CUCUMBER_PUBLISH_ENABLED=true",
     "test4": "cucumber-js",
     "test5": "cucumber-js --tags @login",
-    "test6": "./node_modules/.bin/cucumber-js features/login-feature --tags @login"
+    "test6": "./node_modules/.bin/cucumber-js ./features/login-feature -r ./step_definitions -t @login"
   },
   "keywords": [],
   "author": "",
