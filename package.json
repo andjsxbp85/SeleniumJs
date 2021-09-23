@@ -9,13 +9,14 @@
     "test3": "cucumber-js --publish CUCUMBER_PUBLISH_ENABLED=true",
     "test4": "cucumber-js",
     "test5": "cucumber-js --tags @login",
-    "test6": "./node_modules/.bin/cucumber-js ./features/login-feature -r ./step_definitions -t @login"
+    "test6": "./node_modules/.bin/cucumber-js ./features/login-feature -r ./step_definitions -r ./supports -t @login"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cucumber": "^7.0.0-rc.0",
+    "lodash": "^4.17.21",
     "selenium-webdriver": "^4.0.0-rc-1"
   }
 }
