@@ -1,5 +1,6 @@
 const {Before, After, Status} = require('cucumber');
 const _ = require('lodash');
+const seleniumWebDriver = require('selenium-webdriver');
 
 Before(function() {
     //return this.driver.manage().window().maximize();
